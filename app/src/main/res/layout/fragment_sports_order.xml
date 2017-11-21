@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray9"
+    >
+
+    <LinearLayout
+        android:id="@+id/nologinlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:layout_gravity="center"
+        android:src="@drawable/user_placeholder_head"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="@string/nologin"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:textSize="15sp"
+            android:text="@string/toast4"
+            android:textColor="@color/gray8"
+            />
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:padding="10dip"
+        android:textColor="@color/white"
+        android:background="@drawable/radiu_rangle_loess"
+        android:text="@string/login_name"
+        />
+    <TextView
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_margin="20dip"
+        android:padding="10dip"
+        android:textColor="@color/white"
+        android:background="@drawable/radiu_rangle_loess"
+        android:text="@string/reg_name"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray1"
+        >
+        <RadioGroup
+            android:id="@+id/titles_gp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:gravity="center"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="1111"
+                android:background="@drawable/btn_time_white_selector"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:gravity="center"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:background="@drawable/btn_time_white_selector"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:gravity="center"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="1111"
+                android:background="@drawable/btn_time_white_selector"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="1111"
+                android:background="@drawable/btn_time_white_selector"
+                />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line"
+            android:layout_marginTop="15dip"
+            />
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/maskview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/norecord"
+                    />
+
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:headerDividersEnabled="true"
+                android:background="@color/white"
+                android:divider="@color/line"
+                android:dividerHeight="1px"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                >
+            </ListView>
+            </RelativeLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>

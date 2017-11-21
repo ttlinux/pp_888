@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户名:"
+            android:gravity="right"
+            android:layout_weight="3"
+            android:textColor="@color/gray5"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@color/gray5"
+            android:text="" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/gray1"></View> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"  android:padding="5dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray5"
+        android:text="姓名:"
+        android:gravity="right"
+        android:layout_weight="3"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/gray5"
+        android:text="" />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/gray1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"  android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray5"
+            android:text="余额:"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray5"
+            android:text="" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/gray1"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"  android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray5"
+            android:gravity="right"
+            android:text="会员等级:"
+            android:layout_weight="3"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/dengji"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/gray5"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="@drawable/circle_green"-->
+            <!--/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray5"
+            android:layout_weight="3"
+            android:text="手机号码:"
+            android:gravity="right"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:drawableRight="@drawable/icon_backindicator"
+            android:textColor="@color/usertopbagcolor"
+            android:drawablePadding="5dp"
+            android:text="" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray2"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="@drawable/circle_green"-->
+            <!--/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray5"
+            android:layout_weight="3.1"
+            android:gravity="right"
+            android:text="QQ号码:"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/qqnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:inputType="number"
+            android:paddingLeft="4dp"
+            android:background="@null"
+            android:gravity="right"
+            android:textColor="@color/gray5"
+            android:text="" />
+    </LinearLayout>
+        <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+    android:background="@color/gray2"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="@drawable/circle_green"-->
+            <!--/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray5"
+            android:layout_weight="3.1"
+            android:gravity="right"
+            android:text="电子邮箱:"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:paddingLeft="4dp"
+            android:background="@null"
+            android:textColor="@color/gray5"
+            android:gravity="right"
+            android:text="" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray2"></View>
+        <Button
+            android:id="@+id/comit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/radius_imageview"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确认修改"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

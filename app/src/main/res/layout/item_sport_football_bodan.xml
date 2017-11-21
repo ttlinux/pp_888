@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="15dip"
+                android:text="@string/balllist"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/Hteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/Cteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_item"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="半场"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:textSize="13sp"
+            android:paddingTop="7dip"
+            android:paddingBottom="7dip"
+            />
+        <!--android:background="@color/blue5"-->
+        <!--android:textColor="@color/white"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:paddingTop="7dip"
+            android:paddingBottom="7dip"
+            android:text="比分"
+            />
+        <TextView
+            android:id="@+id/hteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:textSize="13sp"
+            android:paddingTop="7dip"
+            android:paddingBottom="7dip"
+            android:text="sad"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:textSize="13sp"
+            android:paddingTop="7dip"
+            android:paddingBottom="7dip"
+            />
+        <TextView
+            android:id="@+id/cteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:textSize="13sp"
+            android:paddingTop="7dip"
+            android:paddingBottom="7dip"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+
+    <LinearLayout
+        android:id="@+id/mainview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,499 @@
+<resources>
+    <!--<string name="app_name">易博亚洲</string>-->
+    <string name="homepage">首页</string>
+    <string name="userlogin">用户登录</string>
+    <string name="userreg">用户注册</string>
+    <string name="sysnotice">系统公告</string>
+    <string name="plzfillinname">请填写账号</string>
+    <string name="plzfillinpassword">请填写密码</string>
+    <string name="plzfillinpassword2">请画出正确的手势密码</string>
+    <string name="version_name">当前版本：</string>
+    <string name="memberinfo">会员资料</string>
+    <string name="authstr">%s秒后重新获取</string>
+    <string name="changerecord">额度转换记录</string>
+    <string name="membermessage">会员消息</string>
+    <string name="changetitle">额度转换</string>
+    <string name="payformtitle">入款表单</string>
+    <string name="game">游戏</string>
+    <string name="connecterr">网络连接错误</string>
+    <string name="personal">我的</string>
+    <string name="customer">客服中心</string>
+    <string name="member">会员中心</string>
+    <string name="allgame">全部游戏</string>
+    <string name="hotgame">热门游戏</string>
+    <string name="newgame">最新游戏</string>
+    <string name="mycollection">我的收藏</string>
+    <string name="realvideotitle">真人视讯</string>
+    <string name="gamestitle">电子游戏</string>
+    <string name="sporttitle">体育赛事</string>
+    <string name="bbintitle">BBIN</string>
+    <string name="cardtitle">棋牌游戏</string>
+    <string name="gametitile">游戏大厅</string>
+    <string name="querytitle">注单记录</string>
+    <string name="ht1">博彩责任</string>
+    <string name="ht2">公平与公正</string>
+    <string name="ht3">规则与条款</string>
+    <string name="warning">您未安装SD卡，这将导致部分功能不能使用</string>
+    <string name="warnings">无效的SD卡，请更换其他的SD卡</string>
+    <string name="pleaselongin">登录</string>
+    <string name="pleaselongin2">请登录</string>
+    <string name="username">姓名</string>
+    <string name="account">账号</string>
+    <string name="balance">余额</string>
+    <string name="toast">请填写完整必填选项</string>
+    <string name="toast2">两次输入密码不一致</string>
+    <string name="toast3">资金密码必须为4位</string>
+    <string name="confirmcommit">确认提交</string>
+    <string name="Bankband">银行卡绑定</string>
+    <string name="contactoffice">在线客户支持</string>
+    <string name="remark">备注:</string>
+    <string name="projectnoexits">此球类暂无赛事</string>
+    <string name="paytype">支付方式</string>
+    <string name="userrecharge">充值</string>
+    <string name="paytips">在线扫码支付(自动到账)</string>
+    <string name="paytips2">传统扫码支付(审核到账)</string>
+    <string name="userwithdrawal">提现</string>
+    <string name="userconversion">转换</string>
+    <string name="userregdeal">同意用户注册协议</string>
+    <string name="nomoredata">已无更多数据</string>
+    <string name="login_name">登录</string>
+    <string name="reg_name">注册</string>
+    <string name="qq">QQ客服:</string>
+    <string name="weixin">微信客服:</string>
+    <string name="phone">TEL:</string>
+    <string name="email">Email:</string>
+    <string name="reginfottile">为了您的便利提款请务必填写正确的个人姓名及资料\n真实姓名请与需要绑定的银行卡一致</string>
+    <string name="test"></string>
+    <string name="tips3">请将需要充值的金额存入公司银行账户或转入到公司支付平台账户中，经公司财务审核后即刻到账</string>
+    <string name="discount">优惠活动</string>
+    <string name="smalltitle">精彩活动时时推出</string>
+    <string name="cooperation">代理合作</string>
+    <string name="bakcupurl">备用地址</string>
+    <string name="confirmdetail">请同意用户协议</string>
+    <string name="baseurl">UEsDBBQACAgIABN2r0oAAAAAAAAAAAAAAAABAAAAMMsoKSmw0tc3NDDWMzIx1jO0MNQztbCysLA00AcAUEsHCIhiZEkdAAAAGwAAAA==</string>
+
+    <!--修改密码-->
+
+    <string name="modifypassword">修改密码</string>
+    <string name="modifyuserpassword">修改账户密码</string>
+    <string name="modifycashpassword">修改资金密码</string>
+    <string name="newpassword">新密码</string>
+    <string name="oldpassword">旧密码</string>
+    <string name="confirmpassword">确认密码</string>
+    <string name="confirmmodify">确认修改</string>
+    <string name="inputerror">两次输入的新密码不一致</string>
+    <string name="modifysuccess">密码修改成功</string>
+    <string name="modifyfail">密码修改失败</string>
+    <!-- 系统信息和个人信息-->
+    <string name="systemmessage">系统信息</string>
+    <string name="personalmessage">个人信息</string>
+
+    <!--充值记录 -->
+    <string name="payrecord">充值记录</string>
+    <string name="startdate">  起始日期</string>
+    <string name="enddate">  截止日期</string>
+    <string name="paydate">汇款时间</string>
+    <string name="commitdate">提交时间</string>
+    <string name="paycount">汇款金额</string>
+    <string name="state">订单状态:</string>
+    <string name="sucess">成功</string>
+    <string name="fail">失败</string>
+    <string name="paysuccesstime">入款时间</string>
+    <string name="withdorawtime">出款时间</string>
+
+    <!--提现记录 -->
+    <string name="payoutrecord">提现记录</string>
+    <string name="applytime">申请时间</string>
+    <string name="cashtime">提现时间</string>
+    <string name="cashcount">提现金额</string>
+
+    <!-- 入款表单-->
+    <string name="inputstartdate">请选择日期</string>
+
+    <!--提现-->
+    <string name="bankinfo">银行卡信息</string>
+    <string name="withdraw_bank">收款银行:</string>
+    <string name="bankname">银行户名:</string>
+    <string name="bank_account">银行卡号:</string>
+    <string name="bank_address">开户行地址:</string>
+    <string name="withdraw_money">提款金额:</string>
+    <string name="withdraw_password">资金密码:</string>
+    <string name="temp">提现金额需≥100元</string>
+    <string name="confirmwithdraw">确认提款</string>
+
+    <!-- 客服中心-->
+    <string name="qqservice">QQ客服:</string>
+    <string name="weixinservice">微信客服:</string>
+    <string name="phonenum">TEL:</string>
+    <string name="emailaddress">Email:</string>
+
+    <!-- 银行卡绑定-->
+    <string name="withbank">收款银行</string>
+    <string name="withbank_str">请选择收款银行类型</string>
+    <string name="banknum">银行卡号</string>
+    <string name="banknum_str">请填写银行卡号</string>
+    <string name="bankusername">开户姓名</string>
+    <string name="bankusername_str">请填写开户姓名</string>
+    <string name="bankadderss">开户行地址</string>
+    <string name="bankadderss_str">请填写开户行地址</string>
+    <string name="moneypassword">资金密码</string>
+    <string name="moneypassword_str">请填写该账号提现密码</string>
+
+    <!--体育-->
+    <string name="balllist">滚球</string>
+    <string name="today">今日</string>
+    <string name="morningsituation">早盘</string>
+    <string name="matchresult">赛果</string>
+    <string name="orderlist">注单</string>
+    <string name="nologin">未登录</string>
+    <string name="toast4">请登录后查看您的注单</string>
+    <string name="minlimit">单注最低%s元</string>
+    <string name="maxlimit">单注最高%s元</string>
+
+    <!-- 体育-->
+    <string name="changci">场次</string>
+    <string name="duying">独赢</string>
+    <string name="rangqiu">让球</string>
+    <string name="daxiao">大小</string>
+    <string name="danshuang">单双</string>
+    <string name="qiuduidaxiao">球队得分:大/小</string>
+    <string name="ordersuccess">下单成功</string>
+    <string name="orderlimit">下注金额必须大于10</string>
+    <string name="orderlimit2">请填写整数金额</string>
+    <string name="tips">目前没有任何注单</string>
+    <string name="tips2">综合过关需要3个以上的注单</string>
+
+   <!--彩票-->
+    <string name="lotteryroom">彩票大厅</string>
+    <string name="lotterycentre">开奖中心</string>
+    <string name="orderlist2">投注记录</string>
+    <string name="commitordersuccess">下注成功</string>
+    <string name="commitorderfail">下注失败</string>
+    <string name="pleasechoosenumber">请选择号码:</string>
+    <string name="getopendatafail">获取开盘数据失败</string>
+
+    <string-array name="titles_list">
+        <item>充值</item>
+        <item>充值</item>
+        <item>充值</item>
+        <item>充值</item>
+        <item>充值</item>
+    </string-array>
+
+    <string-array name="lotterytitle">
+        <item>彩票游戏</item>
+        <item>开奖中心</item>
+        <item>投注记录</item>
+    </string-array>
+  <!-- 注单查询-->
+    <string name="ordertime">注单时间</string>
+    <string name="ordercount">注单金额</string>
+    <string name="orderresult">注单结果</string>
+    <string name="bettime">投注时间</string>
+    <string name="ordermoney">投注金额</string>
+    <string name="validsum">有效金额</string>
+    <string name="betresult">输赢</string>
+    <string-array name="titles">
+        <item>立即充值</item>
+        <item>立即提现</item>
+        <item>额度转换</item>
+        <item>在线客服</item>
+    </string-array>
+
+    <string-array name="titles2">
+        <item>真人视讯</item>
+        <item>电子游戏</item>
+        <item>BBIN游戏</item>
+        <item>体育赛事</item>
+        <item>彩票游戏</item>
+        <item>棋牌游戏</item>
+    </string-array>
+    <string-array name="changelist">
+        <item>AG平台</item>
+        <item>MG平台</item>
+        <item>PT平台</item>
+        <item>OS平台</item>
+        <item>沙巴平台</item>
+        <item>BBIN平台</item>
+        <item>TTG平台</item>
+        <item>HG平台</item>
+        <item>VG平台</item>
+        <item>SA平台</item>
+    </string-array>
+    <string-array name="videolist">
+        <item>AG视讯</item>
+        <item>沙龙视讯</item>
+        <item>鼎盛视讯</item>
+        <item>OG视讯</item>
+        <item>HG视讯</item>
+        <item>洲际视讯</item>
+        <item>SA视讯</item>
+    </string-array>
+    <string-array name="gameslist">
+        <item>AG电玩</item>
+        <item>MG电玩</item>
+        <item>PT电玩</item>
+        <item>DS电玩</item>
+        <item>TTG电玩</item>
+        <item>NT电玩</item>
+    </string-array>
+
+
+    <string-array name="alllist">
+        <item>全部</item>
+        <item>今天</item>
+        <item>三天内</item>
+        <item>一周内</item>
+        <item>半个月内</item>
+        <item>一个月内</item>
+    </string-array>
+
+    <string-array name="lotterylist">
+        <item>全部</item>
+        <item>香港六合彩</item>
+        <item>福彩3D</item>
+        <item>排列三</item>
+        <item>重庆时时彩</item>
+        <item>天津时时彩</item>
+        <item>新疆时时彩</item>
+        <item>广东快乐十分</item>
+        <item>天津快乐十分</item>
+        <item>北京PK拾</item>
+        <item>幸运28</item>
+        <item>加拿大28</item>
+    </string-array>
+
+
+    <string-array name="urllist">
+        <item>m_duty</item>
+        <item>m_fair</item>
+        <item>m_rule</item>
+        <item>m_agent</item>
+        <item>m_promos</item>
+    </string-array>
+
+    <string-array name="hbodan">
+        <item>1:0</item>
+        <item>2:0</item>
+        <item>2:1</item>
+        <item>3:0</item>
+        <item>3:1</item>
+        <item>3:2</item>
+        <item>0:0</item>
+        <item>1:1</item>
+        <item>2:2</item>
+        <item>3:3</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="bodan">
+        <item>1:0</item>
+        <item>2:0</item>
+        <item>2:1</item>
+        <item>3:0</item>
+        <item>3:1</item>
+        <item>3:2</item>
+        <item>4:0</item>
+        <item>4:1</item>
+        <item>4:2</item>
+        <item>4:3</item>
+        <item>0:0</item>
+        <item>1:1</item>
+        <item>2:2</item>
+        <item>3:3</item>
+        <item>4:4</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="hqtitles">
+        <item>主/主</item>
+        <item>主/和</item>
+        <item>主/客</item>
+        <item>和/主</item>
+        <item>和/和</item>
+        <item>和/客</item>
+        <item>客/主</item>
+        <item>客/和</item>
+        <item>客/客</item>
+        </string-array>
+
+    <string-array name="hqtitles_tag">
+        <item>H_H</item>
+        <item>H_N</item>
+        <item>H_C</item>
+        <item>N_H</item>
+        <item>N_N</item>
+        <item>N_C</item>
+        <item>C_H</item>
+        <item>C_N</item>
+        <item>C_C</item>
+    </string-array>
+
+    <string-array name="ruqiu">
+        <item>0 - 1</item>
+        <item>2 - 3</item>
+        <item>4 - 6</item>
+        <item>7或以上</item>
+    </string-array>
+
+    <string-array name="ruqiu_tag">
+        <item>0_1</item>
+        <item>2_3</item>
+        <item>4_6</item>
+        <item>7up</item>
+    </string-array>
+
+    <string-array name="paytype">
+        <item>银行柜台</item>
+        <item>ATM现金</item>
+        <item>ATM卡转</item>
+        <item>网银转账</item>
+        <item>手机银行转帐</item>
+    </string-array>
+
+    <string-array name="authorize">
+        <item>203de7bac9f5fd836e131f30cba6b924afd5c60835f5a43739d472b739f9b9f0</item>
+        <item>e3:e6:37794f39ee6dcfbf847g328e11</item>
+        <item>x@88Client.$</item>
+
+    </string-array>
+
+    <string-array name="banklist">
+        <item>中国银行</item>
+        <item>工商银行</item>
+        <item>农业银行</item>
+        <item>建设银行</item>
+        <item>邮政银行</item>
+        <item>招商银行</item>
+        <item>民生银行</item>
+        <item>兴业银行</item>
+        <item>中信银行</item>
+        <item>交通银行</item>
+        <item>华夏银行</item>
+        <item>广发银行</item>
+        <item>光大银行</item>
+        <item>平安银行</item>
+        <item>浦发银行</item>
+        <item>农村信用社</item>
+    </string-array>
+    <string-array name="tmlist">
+        <item>单</item>
+        <item>双</item>
+        <item>大</item>
+        <item>小</item>
+        <item>合单</item>
+        <item>合双</item>
+        <item>红波</item>
+        <item>绿波</item>
+        <item>蓝波</item>
+        <item>家禽</item>
+        <item>野兽</item>
+        <item>合大</item>
+        <item>合小</item>
+        <item>尾大</item>
+        <item>尾小</item>
+        <item>大单</item>
+        <item>小单</item>
+        <item>大双</item>
+        <item>小双</item>
+    </string-array>
+    
+    <string-array name="rtype">
+        <item>p3</item>
+        <item>bk_p3</item>
+        <item>r</item>
+        <item>bk_r_main</item>
+        <item>hpd</item>
+        <item>pd</item>
+        <item>t</item>
+        <item>f</item>
+        <item>re_main</item>
+        <item>re</item>
+    </string-array>
+
+
+    <!-- 重庆时时彩-->
+    <string-array name="ccssc_shuangmian">
+        <item>万位</item>
+        <item>千位</item>
+        <item>百位</item>
+        <item>十位</item>
+        <item>个位</item>
+        <item>总和,龙虎和</item>
+    </string-array>
+    <string-array name="ccssc_shuzipan">
+    <item>万位</item>
+    <item>千位</item>
+    <item>百位</item>
+    <item>十位</item>
+    <item>个位</item>
+    </string-array>
+    <string-array name="ccssc_dingwei">
+        <item>万</item>
+        <item>仟</item>
+        <item>佰</item>
+        <item>拾</item>
+        <item>个</item>
+    </string-array>
+    <string-array name="ccssc_heshu2">
+        <item>万仟和数</item>
+        <item>万佰和数</item>
+        <item>万拾和数</item>
+        <item>万个和数</item>
+        <item>仟佰和数</item>
+        <item>仟拾和数</item>
+        <item>仟个和数</item>
+        <item>佰拾和数</item>
+        <item>佰个和数</item>
+        <item>拾个和数</item>
+    </string-array>
+    <string-array name="ccssc_kuadu">
+        <item>前三位</item>
+        <item>中三位</item>
+        <item>后三位</item>
+    </string-array>
+    <string-array name="pay_record_titles">
+        <item>今天</item>
+        <item>一周</item>
+        <item>一个月</item>
+        <item>三个月</item>
+    </string-array>
+    <!-- 重庆时时彩-->
+
+
+    <string-array name="sport_states">
+        <item>赢</item>
+        <item>输</item>
+        <item>赢一半</item>
+        <item>输一半</item>
+        <item>和局退款</item>
+        <item>比赛取消</item>
+        <item>赔率错误</item>
+        <item>比分错误</item>
+        <item>盘口错误</item>
+        <item>队名错误</item>
+        <item>和局取消</item>
+        <item>赛事延赛</item>
+        <item>赛事腰斩</item>
+        <item>进球取消</item>
+        <item>正在确认</item>
+        <item>未接受注单</item>
+        <item>未结算</item>
+    </string-array>
+    <string-array name="app_info">
+        <item>com.android.browser</item>
+        <item>com.UCMobile</item>
+        <item>com.android.chrome</item>
+        <item>com.chrome.beta</item>
+        <item>org.mozilla.firefox</item>
+        <item>com.tencent.mtt</item>
+        <item>com.qihoo.browser</item>
+        <item>com.baidu.searchbox</item>
+        <item>com.ijinshan.browser_fast</item>
+        <item>com.oupeng.mini.android</item>
+        <item>com.lieying.browser</item>
+        <item>com.mx.browser</item>
+        <item>mobi.mgeek.TunnyBrowser</item>
+        <item>sogou.mobile.explorer</item>
+    </string-array>
+</resources>

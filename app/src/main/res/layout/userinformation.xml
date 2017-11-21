@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:orientation="vertical">
+
+    <include layout="@layout/uesr_toplayout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/userinforlayout"></include>
+
+                <!--<include layout="@layout/usersafetyayout"></include>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView4"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:text="银行卡信息" />-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:background="@color/gray2"></View>-->
+
+                <!--<com.a8android888.bocforandroid.view.MyListView-->
+                    <!--android:id="@+id/listview"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:divider="@color/line"-->
+                    <!--android:dividerHeight="1dip"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:cacheColorHint="#00000000"-->
+                    <!--android:listSelector="#00000000"-->
+                    <!--android:fadeScrollbars="true"-->
+                    <!--android:fadingEdge="none"-->
+                    <!--android:scrollbars="none">-->
+
+                <!--</com.a8android888.bocforandroid.view.MyListView>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/comit"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:background="@drawable/radius_imageview"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:text="绑定银行卡"-->
+                    <!--android:textColor="@color/white" />-->
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

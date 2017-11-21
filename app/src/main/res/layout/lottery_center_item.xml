@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:minHeight="70dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:minWidth="40dp"
+       android:id="@+id/img"
+
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_above="@+id/view2"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/gray5"
+            android:text="aaa"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="sss"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/view2"
+            android:layout_marginRight="5dp"
+            android:id="@+id/qs" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray10"
+            android:layout_centerInParent="true"
+            android:layout_height="1dp"
+            android:id="@+id/view2"></View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="dddd"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/code"
+            android:layout_below="@+id/view2"
+            />
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

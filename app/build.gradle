@@ -1,0 +1,218 @@
+apply plugin: 'com.android.application'
+//打包时间
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+//获取local.properties的内容
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    dexOptions
+            {
+                incremental true
+                javaMaxHeapSize "2048m"
+                jumboMode true
+                preDexLibraries false
+
+            }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+
+        }
+        instrumentTest.setRoot('tests')
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    defaultConfig {
+//        applicationId "com.a8android888.bocforandroid"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        multiDexEnabled true//突破应用方法数65535的限制
+        versionName "1.0.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+//    repositories {
+//        jcenter()
+//    }
+    productFlavors {
+        a8android888 {
+            // 每个环境包名不同
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.a8android888.bocforandroid"]
+            applicationId "com.a8android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "易博亚洲"
+            manifestPlaceholders = [JPUSHKEY  : "c7d768a6c9fb92723457efad"]
+        }
+        a8android986 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.a8android986.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.a8android986.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "易博亚洲"
+            manifestPlaceholders = [JPUSHKEY  : "939d2a05d41e0b294d26fe90"]
+        }
+        a8android988 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.a8android988.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.a8android988.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "易博亚洲"
+            manifestPlaceholders = [JPUSHKEY  : "52e32cb2a57b047816c6fcc7"]
+        }
+        d2android888 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.d2android888.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.d2android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "博发"
+            manifestPlaceholders = [JPUSHKEY  : "b775aa0e1453b61a6a7bf13b"]
+        }
+        d2android914 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.d2android914.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.d2android914.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "博发"
+            manifestPlaceholders = [JPUSHKEY  : "1305a096e1cfe29871d95c63"]
+        }
+        a1android888 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.a1android888.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.a1android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "美高梅"
+            manifestPlaceholders = [JPUSHKEY  : "dca8e9e847af7dd955dbadc2"]
+        }
+        a3android888 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.a3android888.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.a3android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "澳门永利"
+            manifestPlaceholders = [JPUSHKEY  : "f5e9b48e01956e3cb3bd0cca"]
+        }
+        a4android888 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.a4android888.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.a4android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "威尼斯人"
+            manifestPlaceholders = [JPUSHKEY  : "e275224a882dfbd064ef4df4"]
+        }
+        a6android888 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.a6android888.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.a6android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "金沙城"
+            manifestPlaceholders = [JPUSHKEY  : "1233dd559f7bb95fb1c3fa57"]
+        }
+        c8android888 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.c8android888.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.c8android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "澳门银河"
+            manifestPlaceholders = [JPUSHKEY  : "e4c5bd097055fa48c386e46a"]
+        }
+        c3android888 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.c3android888.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.c3android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "澳门星际"
+            manifestPlaceholders = [JPUSHKEY  : "70384204449179c638eba470"]
+        }
+        c4android888 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.c4android888.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.c4android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "金沙城"
+            manifestPlaceholders = [JPUSHKEY  : "46df34ce97f67148691a13ac"]
+
+        }
+        c5android888 {
+            manifestPlaceholders = [str: "devStr", package_name: "com.c5android888.bocforandroid"]
+            // 每个环境包名不同
+            applicationId "com.c5android888.bocforandroid"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "宝博"
+            manifestPlaceholders = [JPUSHKEY  : "46df34ce97f67148691a13ac"]
+        }
+//
+    }
+    buildTypes {
+        debug {
+            debuggable = true
+            jniDebuggable = true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+        //            // 批量打包
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    //输出apk名称为：渠道名_版本名_时间.apk
+                    def fileName = "${variant.productFlavors[0].name}_v${defaultConfig.versionName}_${releaseTime()}.apk"
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        }
+//
+    }
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '25.3.0'
+                }
+            }
+        }
+    }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //    testCompile 'junit:junit:4.12'
+    compile files('libs/android-async-http-1.4.3.jar')
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/GsonFormat1.2.1.jar')
+    compile files('libs/asmack-android-8-4.0.7.jar')
+    compile files('libs/gson-2.3.1.jar')
+    compile files('libs/jpush-android_v3.0.6.jar')
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile project(':Wheel')
+    compile project(':PullRefreshLibrary')
+    compile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    compile files('libs/tbs_sdk_thirdapp.jar')
+}

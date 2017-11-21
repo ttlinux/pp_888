@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dailiappforlayout"
+    android:layout_height="match_parent">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/tianxie"
+        android:button="@null"
+        android:id="@+id/bindbankcardlayout"
+        android:textSize="13sp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="填写表单申请代理资格"
+        android:drawablePadding="10dp"
+        android:layout_marginLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/topbagcolor" />
+    <RelativeLayout
+        android:id="@+id/accountlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:text="代理账号:"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/dailiname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioButton"
+            android:layout_alignBottom="@+id/radioButton"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/radioButton"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/topbagcolor" />
+    <RelativeLayout
+        android:id="@+id/accountlayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:text="代理类型:"
+            android:textSize="13sp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignBaseline="@+id/radioButton1"
+            android:layout_alignBottom="@+id/radioButton1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/radioButton1"
+            android:layout_height="wrap_content">
+            <!--<RadioButton-->
+            <!--android:id="@+id/dailitype"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:checked="true"-->
+            <!--android:padding="5dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="@drawable/switch_left_draw"-->
+            <!--android:textColor="@drawable/textcolor"-->
+            <!--android:button="@null"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:text="退佣代理"-->
+            <!--android:textSize="13sp" />-->
+            <!--<RadioButton-->
+            <!--android:id="@+id/dailitypea"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:button="@null"-->
+            <!--android:background="@drawable/switch_left_draw"-->
+            <!--android:textColor="@drawable/textcolor"-->
+            <!--android:gravity="center"-->
+            <!--android:text="退水代理"-->
+            <!--android:textSize="13sp" />-->
+            <TextView
+                android:id="@+id/hkfs"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:drawableRight="@drawable/icon_jilu"
+                android:paddingRight="5dip"
+                android:background="@drawable/radiu_gray_selector"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:hint="请点击选择代理类型"
+                android:focusable="false"
+                android:gravity="left|center"
+                android:inputType="textAutoComplete"
+                android:paddingLeft="15dip"
+                android:paddingTop="4dip"
+                android:paddingBottom="4dip"
+                android:singleLine="true"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/topbagcolor" />
+    <RelativeLayout
+        android:id="@+id/accountlayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/dailiemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:text="邮箱地址:"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dailiemail"
+            android:layout_alignBottom="@+id/dailiemail"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/dailiemail"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/topbagcolor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="申请理由:"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/edit"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:layout_marginRight="30dp"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        >
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/warn"
+      />
+    <RadioButton
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="5dip"
+        android:button="@null"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/listview"
+        android:drawablePadding="5dip"
+        android:textColor="@color/gray8"
+        android:text="@string/tips3"
+        android:textSize="14sp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/comit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radius_imageview"
+        android:padding="10dp"
+        android:text="提交申请"
+        android:textColor="@color/white" />
+</LinearLayout>

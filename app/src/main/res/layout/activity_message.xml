@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    >
+
+    <include
+        layout="@layout/uesr_toplayout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:background="@color/white"
+        >
+    <include
+        layout="@layout/switch_layout"
+        />
+        <!--<ImageView-->
+            <!--android:id="@+id/image1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dip"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="@drawable/circle_red"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/image2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dip"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="@drawable/circle_red"-->
+            <!--/>-->
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:background="@color/white"
+        >
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="8dip"
+        android:divider="@color/gray1"
+        android:background="@color/gray1"
+        >
+    </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipl2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+            <ListView
+                android:id="@+id/listview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="8dip"
+                android:divider="@color/gray1"
+                android:background="@color/gray1"
+                >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</LinearLayout>

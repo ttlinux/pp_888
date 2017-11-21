@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_toplayout"></include>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+            <!--color_no_finger:未触摸时圆形的颜色-->
+            <!--color_finger_on:触摸时圆形的颜色-->
+            <!--color_finger_up_correct:输入正确时圆形的颜色-->
+            <!--color_finger_up_error:出错时圆形的颜色-->
+            <!--count：手势密码的圆形数量，n*n-->
+            <!--preference_id：手势密码保存的id号，不输入或输入-1则使用默认的id-->
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp" />
+            <com.a8android888.bocforandroid.view.GestureLockViewGroup
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:tryTimes="4"
+                app:count="3"
+                android:gravity="center_vertical"
+                android:id="@+id/id_gestureLockViewGroup"/>
+         <!--zhy:color_no_finger_inner_circle="#ff085D58" zhy:color_no_finger_outer_circle="#ff08F0E0" zhy:color_finger_on="#FF1734BF"-->
+        </LinearLayout>
+</LinearLayout>

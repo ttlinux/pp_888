@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_toplayout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:layout_gravity="center"
+                android:id="@+id/kefu"
+                android:src="@drawable/safe_img" />
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="为了您的账号安全请联系我们的客服修改"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:divider="@color/topbagcolor"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/qq"
+                        android:drawablePadding="20dp"
+                        android:text="@string/qq"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/topbagcolor"></View>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/weixin"
+                        android:drawablePadding="20dp"
+                        android:text="@string/weixin"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/topbagcolor"></View>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/phone"
+                        android:drawablePadding="20dp"
+                        android:text="@string/phone"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/topbagcolor"></View>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/email"
+                        android:drawablePadding="20dp"
+                        android:text="@string/email"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/topbagcolor"></View>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radiu_blue_rangle"
+                    android:padding="10dip"
+                    android:textColor="@color/white"
+                    android:text="联系在线客服"
+                    android:layout_margin="20dip"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

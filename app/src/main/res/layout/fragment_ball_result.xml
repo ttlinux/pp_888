@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray6"
+    >
+    <RelativeLayout
+        android:id="@+id/startdate_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:background="@drawable/radiu_white_rangle_graw"
+        >
+    <ImageView
+        android:id="@+id/lastday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:src="@drawable/left_result"
+        />
+    <TextView
+        android:id="@+id/startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:text="@string/startdate"
+        />
+        <ImageView
+            android:id="@+id/nextday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingRight="15dip"
+            android:src="@drawable/right_result"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <com.a8android888.bocforandroid.view.AnimatedExpandableListView
+            android:id="@+id/expandablelistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:dividerHeight="1px"
+            android:divider="#00000000"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:background="@color/white"
+            />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

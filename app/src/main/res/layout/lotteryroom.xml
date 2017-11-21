@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/relayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<com.a8android888.bocforandroid.view.MyViewPager-->
+                    <!--android:id="@+id/viewpager"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:listSelector="#00000000"-->
+                    <!--android:cacheColorHint="#00000000"-->
+                    <!--></com.a8android888.bocforandroid.view.MyViewPager>-->
+            <!--</RelativeLayout>-->
+<include layout="@layout/mainlayut_banner"></include>
+            <LinearLayout
+                android:id="@+id/noticeview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lotteryzj" />
+
+
+                <com.a8android888.bocforandroid.view.MarqueeTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:id="@+id/text"
+                    android:textSize="13sp"
+                    android:text="@string/test"
+                    android:textColor="@color/gray2"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="none"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:drawableRight="@drawable/icon_backindicator"
+                    />
+                <!--
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawablePadding="5dp"
+                    android:padding="3dip"
+                    android:ellipsize="none"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/gray2"
+                    android:drawableRight="@drawable/icon_backindicator"
+                    android:textSize="13sp" />-->
+            </LinearLayout>
+
+            <com.a8android888.bocforandroid.view.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:layout_marginTop="10dp"
+                android:listSelector="#00000000"
+                android:cacheColorHint="#00000000"
+                android:horizontalSpacing="2dp"
+                android:numColumns="4"
+                android:verticalSpacing="2dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

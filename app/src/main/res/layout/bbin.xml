@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray12"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_toplayout"
+        android:id="@+id/top"></include>
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/bbin_banner"
+        android:layout_below="@+id/top"
+        android:id="@+id/img"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:numColumns="2" />
+
+ <!--   <Button
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:background="@drawable/radius_imageview"
+        android:layout_gravity="center_vertical" />-->
+</RelativeLayout>

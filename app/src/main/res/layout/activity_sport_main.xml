@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/app_toplayout_loess"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:button="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="@string/balllist"
+            android:textSize="15sp"
+            android:textColor="@color/gray10"
+            />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:button="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="@string/today"
+            android:textSize="15sp"
+            android:textColor="@color/gray10"
+            />
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:button="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="@string/morningsituation"
+            android:textSize="15sp"
+            android:textColor="@color/gray10"
+            />
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:button="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="@string/matchresult"
+            android:textSize="15sp"
+            android:textColor="@color/gray10"
+            />
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:button="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="@string/orderlist"
+            android:textSize="15sp"
+            android:textColor="@color/gray10"
+            />
+    </RadioGroup>
+        <ImageView
+            android:id="@+id/moveline"
+            android:layout_width="50dip"
+            android:layout_height="2dip"
+            android:layout_below="@id/radiogroup"
+            android:background="@color/red2"
+            />
+    </RelativeLayout>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="7dip"
+    android:background="@drawable/showdow_gray"
+    />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

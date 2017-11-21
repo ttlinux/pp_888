@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userbagcolor">
+
+
+    <include
+        android:id="@+id/topview"
+        layout="@layout/uesr_toplayout" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/topview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/imglayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="@color/usertopbagcolor"></View>
+
+                <ImageView
+                    android:id="@+id/imagehead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:minHeight="73dp"
+                    android:minWidth="73dp"
+                    android:src="@drawable/user_placeholder_head" />
+
+                <LinearLayout
+                    android:id="@+id/loginlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_toEndOf="@+id/imagehead"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/loginreglayout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="登录"
+                            android:textColor="@color/white" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:id="@+id/textview4"
+                            android:text="/"
+                            android:textColor="@color/white" />
+                        <TextView
+                            android:id="@+id/textview3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="注册"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                        <TextView
+                            android:id="@+id/textview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nologinlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/imagehead"
+                    android:layout_marginStart="14dp"
+                    android:layout_toEndOf="@+id/imagehead"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未登录"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请注册账号或登录您的账号"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/lineview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/imglayout"
+                android:background="@color/userbagcolor"></View>
+
+            <RadioGroup
+                android:id="@+id/grpview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lineview"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <com.a8android888.bocforandroid.view.MyRadioButton
+                    android:id="@+id/pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/user_pay"
+                    android:gravity="center"
+                    android:text="@string/userrecharge"
+                    android:textColor="@color/hompagetitlecolor" />
+
+                <ImageView
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/line" />
+
+                <com.a8android888.bocforandroid.view.MyRadioButton
+                    android:id="@+id/tixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/user_tixian"
+                    android:gravity="center"
+                    android:text="@string/userwithdrawal"
+                    android:textColor="@color/hompagetitlecolor" />
+
+                <ImageView
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/line" />
+
+                <com.a8android888.bocforandroid.view.MyRadioButton
+                    android:id="@+id/change"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/user_change"
+                    android:gravity="center"
+                    android:text="@string/userconversion"
+                    android:textColor="@color/hompagetitlecolor" />
+            </RadioGroup>
+
+            <!--<include-->
+                <!--android:id="@+id/dd"-->
+                <!--layout="@layout/user_function_layout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/grpview"></include>-->
+
+            <LinearLayout
+            android:id="@+id/modellist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/userbagcolor"
+                android:orientation="vertical"
+            android:layout_below="@+id/grpview">
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

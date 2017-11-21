@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray9"
+    >
+
+    <RelativeLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/loess"
+        >
+
+        <TextView
+            android:id="@+id/trefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:text="刷新"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="10dip"
+            />
+
+        <TextView
+            android:id="@+id/minperiod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:background="@drawable/refresh_circle"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/trefresh"
+            android:textColor="@color/white"
+            android:text="11"
+            />
+
+    </RelativeLayout>
+
+    <com.a8android888.bocforandroid.view.AnimatedExpandableListView
+        android:id="@+id/expandablelistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/refresh"
+        android:layout_marginTop="10dip"
+        android:dividerHeight="0dp"
+        android:divider="#00000000"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:background="@color/white"
+        >
+    </com.a8android888.bocforandroid.view.AnimatedExpandableListView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        android:scrollbarStyle="outsideOverlay"
+        android:clipChildren="true"
+        android:clipToPadding="false"
+        android:layout_above="@id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

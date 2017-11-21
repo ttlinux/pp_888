@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="match_parent">
+
+        <!--<ListView-->
+            <!--android:id="@+id/lsitview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:cacheColorHint="#00000000"-->
+            <!--android:listSelector="#00000000"-->
+            <!--android:fadeScrollbars="true"-->
+            <!--android:layout_below="@+id/toplayout"-->
+            <!--android:layout_above="@+id/comitlayout"-->
+            <!--android:fadingEdge="none"-->
+            <!--android:scrollbars="none">-->
+        <!--</ListView>-->
+
+        <include
+            layout="@layout/lotterycomitlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/comitlayout">
+
+        </include>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="号码"
+            android:visibility="gone"
+            android:layout_margin="1dp"
+            android:id="@+id/gamenametitletv"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/lotteryfragmenttitle2"
+            />
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_above="@id/comitlayout"
+            android:layout_below="@+id/gamenametitletv"
+            android:id="@+id/lsitview"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:cacheColorHint="#00000000"
+            android:verticalSpacing="-1dp"
+            android:horizontalSpacing="-1dp"
+            android:listSelector="#00000000"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none"
+            android:numColumns="2" />
+        <ListView
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_above="@id/comitlayout"
+            android:layout_below="@+id/gamenametitletv"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:id="@+id/lsitview2"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none"
+            />
+        <ScrollView
+            android:id="@+id/mainview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_above="@id/comitlayout"
+            >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/gray8"
+
+            >
+
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

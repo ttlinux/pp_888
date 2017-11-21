@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/app_toplayout_lottery"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:button="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="投注"
+            android:textSize="15sp"
+            android:textColor="@color/lottery"
+            />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:button="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="开奖"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:button="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="注单"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:button="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="玩法"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+    </RadioGroup>
+        <ImageView
+            android:id="@+id/moveline"
+            android:layout_width="50dip"
+            android:layout_height="2dip"
+            android:layout_below="@id/radiogroup"
+            android:background="@color/lottery"
+            />
+    </RelativeLayout>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="2dip"
+    android:background="@drawable/showdow_gray"
+    />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

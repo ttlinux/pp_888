@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/uesr_toplayout"
+        android:id="@+id/top"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:id="@+id/lsitview"
+        android:layout_below="@+id/top"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:dividerHeight="1dp"
+        android:divider="@color/gray1"
+        android:scrollbars="none"
+        />
+    <TextView
+        android:id="@+id/comit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="点击添加银行卡"
+        android:textColor="@color/usertopbagcolor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/lsitview"
+         />
+</RelativeLayout>

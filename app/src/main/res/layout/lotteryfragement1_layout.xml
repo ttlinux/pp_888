@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include
+        layout="@layout/lotteryfragementop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toplayout"></include>
+
+    <com.a8android888.bocforandroid.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toplayout"
+        >
+    </com.a8android888.bocforandroid.view.NoScrollViewPager>
+
+        <RelativeLayout
+            android:id="@+id/shadows_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_below="@id/toplayout"
+            android:background="#77868485"
+            >
+            <ImageView
+                android:id="@+id/shadows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@drawable/kaijiang"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

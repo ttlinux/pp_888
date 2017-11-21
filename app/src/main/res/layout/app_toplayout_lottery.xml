@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/topview"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:background="@color/lottery"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            />
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:layout_toRightOf="@+id/back"
+            android:layout_centerVertical="true"
+            ></View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:id="@+id/title"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:textSize="18dp"
+            android:text=""/>
+        <ImageView
+            android:id="@+id/triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/title"
+            android:layout_toRightOf="@id/title"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:src="@drawable/compu_img_up"
+            />
+
+        <ImageView
+            android:id="@+id/imagetwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dip"
+            android:visibility="gone"
+            android:src="@drawable/list"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/textView5"
+            android:textSize="15dp"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/back" />
+
+    </RelativeLayout>
+
+</LinearLayout>

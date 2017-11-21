@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AutoSizeTextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.a8android888.bocforandroid.view.AutoFitTextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/gun_icon"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginTop="3dip"
+                android:padding="5dp"
+                android:src="@drawable/football"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/Hteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Cteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topbagcolor"
+        android:orientation="horizontal"
+        android:padding="1px">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/topbagcolor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1px"
+                android:layout_weight="0.15"
+                android:orientation="vertical">
+
+                <com.a8android888.bocforandroid.view.AutoFitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@color/yellow2"
+                    android:gravity="center"
+                    android:maxWidth="55px"
+                    android:minWidth="55px"
+                    android:paddingBottom="7dip"
+                    android:paddingTop="7dip"
+                    android:text="场次"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.85"
+                android:background="@color/topbagcolor"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/topbagcolor"
+                    android:orientation="horizontal">
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.05"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text="独赢"
+                        android:textSize="13sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text="让球"
+                        android:textSize="13sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text="大小"
+                        android:textSize="13sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.15"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text="单双"
+                        android:textSize="13sp" />
+                </TableRow>
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topbagcolor"
+        android:orientation="horizontal"
+        android:padding="1px">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/topbagcolor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:orientation="horizontal">
+
+                <com.a8android888.bocforandroid.view.AutoFitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1px"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:maxWidth="35px"
+                    android:minWidth="35px"
+                    android:paddingBottom="7dip"
+                    android:paddingTop="7dip"
+                    android:text="全\n场"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="1"
+                        android:background="#FFFFFFFF"
+                        android:gravity="center"
+                        android:maxWidth="20px"
+                        android:minWidth="20px"
+                        android:padding="5dip"
+                        android:text="主"
+                        android:textSize="15sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="1"
+                        android:background="#FFFFFFFF"
+                        android:gravity="center"
+                        android:maxWidth="20px"
+                        android:minWidth="20px"
+                        android:padding="5dip"
+                        android:text="客"
+                        android:textSize="15sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="1"
+                        android:background="#FFFFFFFF"
+                        android:gravity="center"
+                        android:maxWidth="20px"
+                        android:minWidth="20px"
+                        android:padding="5dip"
+                        android:text="和"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AllMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.85"
+                android:background="@color/topbagcolor"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/topbagcolor"
+                    android:orientation="horizontal">
+                    <!--<com.a8android888.bocforandroid.view.AutoFitTextView-->
+                    <!--android:layout_weight="0.01"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="1px"-->
+                    <!--android:padding="5dip"-->
+                    <!--android:text="主"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:background="#FFFFFFFF"-->
+                    <!--/>-->
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.05"
+                        android:autoText="true"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text=""
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text=""
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.15"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text=""
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@color/topbagcolor"
+                    android:orientation="horizontal">
+                    <!--<com.a8android888.bocforandroid.view.AutoFitTextView-->
+                    <!--android:layout_weight="0.01"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="1px"-->
+                    <!--android:padding="5dip"-->
+                    <!--android:text="客"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:background="#FFFFFFFF"-->
+                    <!--/>-->
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.05"
+                        android:autoText="true"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.15"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@color/topbagcolor"
+                    android:orientation="horizontal">
+                    <!--<com.a8android888.bocforandroid.view.AutoFitTextView-->
+                    <!--android:layout_weight="0.01"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="1px"-->
+                    <!--android:padding="5dip"-->
+                    <!--android:text="和"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:background="#FFFFFFFF"-->
+                    <!--/>-->
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.05"
+                        android:autoText="true"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.15"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+                </TableRow>
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topbagcolor"
+        android:orientation="horizontal"
+        android:padding="1px">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/topbagcolor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:orientation="horizontal">
+
+                <com.a8android888.bocforandroid.view.AutoFitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1px"
+                    android:layout_weight="1"
+                    android:background="@color/yellow2"
+                    android:gravity="center"
+                    android:maxWidth="35px"
+                    android:minWidth="35px"
+                    android:paddingBottom="7dip"
+                    android:paddingTop="7dip"
+                    android:text="半\n场"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="1"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="20px"
+                        android:minWidth="20px"
+                        android:padding="5dip"
+                        android:text="主"
+                        android:textSize="15sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="1"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="20px"
+                        android:minWidth="20px"
+                        android:padding="5dip"
+                        android:text="客"
+                        android:textSize="15sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="1"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="20px"
+                        android:minWidth="20px"
+                        android:padding="5dip"
+                        android:text="和"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/HALFMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.85"
+                android:background="@color/topbagcolor"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/topbagcolor"
+                    android:orientation="horizontal">
+                    <!--<com.a8android888.bocforandroid.view.AutoFitTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="1px"-->
+                    <!--android:padding="5dip"-->
+                    <!--android:text="主"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:background="@color/yellow2"-->
+                    <!--/>-->
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.05"
+                        android:autoText="true"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.15"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@color/topbagcolor"
+                    android:orientation="horizontal">
+                    <!--<com.a8android888.bocforandroid.view.AutoFitTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="1px"-->
+                    <!--android:padding="5dip"-->
+                    <!--android:text="客"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:background="@color/yellow2"-->
+                    <!--/>-->
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.05"
+                        android:autoText="true"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.15"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@color/topbagcolor"
+                    android:orientation="horizontal">
+                    <!--<com.a8android888.bocforandroid.view.AutoFitTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="1px"-->
+                    <!--android:padding="5dip"-->
+                    <!--android:text="和"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:background="@color/yellow2"-->
+                    <!--/>-->
+                    <com.a8android888.bocforandroid.view.AutoFitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.05"
+                        android:autoText="true"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.2"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+
+                    <com.a8android888.bocforandroid.view.AutoSizeTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="0.15"
+                        android:background="@color/yellow2"
+                        android:gravity="center"
+                        android:maxWidth="55px"
+                        android:minWidth="55px"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+
+                        android:textSize="13sp"
+                        AutoSizeTextview:autofix="true" />
+                </TableRow>
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

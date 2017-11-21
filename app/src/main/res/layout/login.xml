@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_toplayout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dip"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+        <LinearLayout
+        android:id="@+id/temp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/accountlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/login_img_user"
+            android:drawablePadding="5dp"
+            android:text="账号"
+            android:textSize="13sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBaseline="@+id/radioButton"
+            android:layout_alignBottom="@+id/radioButton"
+            android:layout_centerVertical="true"
+            android:hint="请输入账号"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/radioButton"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="textAutoComplete"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/topbagcolor" />
+
+    <RelativeLayout
+        android:id="@+id/passwlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/login_img"
+            android:drawablePadding="5dp"
+            android:text="密码"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBaseline="@+id/radioButton2"
+            android:layout_alignBottom="@+id/radioButton2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入密码"
+            android:layout_toEndOf="@+id/radioButton2"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="textAutoComplete"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/line"
+        android:background="@color/topbagcolor" />
+
+    <RelativeLayout
+        android:id="@+id/codelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/user_info"
+            android:drawablePadding="5dp"
+            android:text="验证码"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/coded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/codebagcolor"
+            android:padding="5dp"
+            android:text="5523" />
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioButton3"
+            android:layout_alignBottom="@+id/radioButton3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/radioButton3"
+            android:layout_toStartOf="@+id/coded"
+            android:layout_weight="95.68"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/topbagcolor"
+        android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="30dip"
+                android:orientation="horizontal"
+                >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/warn"
+                />
+
+            <TextView
+                android:id="@+id/notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="20dip"
+                android:gravity="left"
+                android:textSize="13sp"
+                android:drawablePadding="5dip"
+                android:textColor="@color/gray8"
+                />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/passwordgroup"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/radiu_gray_rangle"
+                >
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:button="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    android:paddingLeft="12dip"
+                    android:paddingRight="12dip"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/textcolor"
+                    android:text="字符密码"
+                    android:background="@drawable/switch_left_draw"
+
+                    android:singleLine="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:button="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:layout_marginLeft="-1dip"
+                    android:textSize="13sp"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    android:paddingLeft="12dip"
+                    android:paddingRight="12dip"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/textcolor"
+                    android:text="手势密码"
+                    android:background="@drawable/switch_right_draw"
+                    />
+            </RadioGroup>
+
+
+            <Button
+        android:id="@+id/comit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/radius_imageview"
+        android:padding="10dp"
+        android:text="登录"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/layout"
+        android:padding="10dp">
+
+        <TextView
+
+            android:id="@+id/forgetpassw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textColor="@color/usertopbagcolor"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/registered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="立即注册"
+            android:textColor="@color/usertopbagcolor"
+            android:textSize="13sp" />
+    </LinearLayout>
+            <!--color_no_finger:未触摸时圆形的颜色-->
+            <!--color_finger_on:触摸时圆形的颜色-->
+            <!--color_finger_up_correct:输入正确时圆形的颜色-->
+            <!--color_finger_up_error:出错时圆形的颜色-->
+            <!--count：手势密码的圆形数量，n*n-->
+            <!--preference_id：手势密码保存的id号，不输入或输入-1则使用默认的id-->
+            <com.a8android888.bocforandroid.view.GestureLockViewGroup
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:tryTimes="4"
+                app:count="3"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/id_gestureLockViewGroup"/>
+         <!--zhy:color_no_finger_inner_circle="#ff085D58" zhy:color_no_finger_outer_circle="#ff08F0E0" zhy:color_finger_on="#FF1734BF"-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

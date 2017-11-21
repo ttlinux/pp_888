@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:background="@color/topbagcolor"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            />
+        <!--        <View
+                    android:id="@+id/line"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@+id/back"
+                    android:layout_centerVertical="true"
+                    ></View>-->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner"
+            android:text=""
+            android:gravity="center_vertical"
+            android:button="@null"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableEnd="@drawable/sprnner"
+            android:drawablePadding="10dp"
+            android:background="@color/topbagcolor"
+       />
+            <!--android:popupBackground="@android:color/white"-->
+            <!--android:background="@drawable/compu_img_up"-->
+            <!--android:paddingRight="20dp"-->
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/img_search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dip"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:hint="游戏搜索"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        />
+            <ImageView
+                android:layout_width="45dp"
+                android:id="@+id/searchimg"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/compu_img_search"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="1dp"-->
+    <!--android:layout_height="40dp">-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:drawableBottom="@color/usertopbagcolor"-->
+        <!--android:id="@+id/allgame"-->
+        <!--android:text="@string/allgame"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/hostgame"-->
+        <!--android:text="@string/hostgame"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/newsgame"-->
+        <!--android:text="@string/newsgame"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/mycollection"-->
+        <!--android:text="@string/mycollection"/>-->
+
+<!--</LinearLayout>-->
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="fill_parent"
+        android:background="@color/usertopbagcolor2"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/title_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lay"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:tag="skin:funcbag:background"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="10dip"
+        android:layout_height="5dp"
+        android:background="@color/usertopbagcolor" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:id="@+id/gridview"
+        android:numColumns="2"
+        android:background="@color/black">
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/topbagcolor"
+        android:layout_height="50dp">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_toLeftOf="@+id/regbt"
+    android:text="@string/login_name"
+    android:id="@+id/loginbt" />
+        <Button
+            android:id="@+id/regbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="@string/reg_name"/>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/logo"
+             />
+    </RelativeLayout>
+</LinearLayout>

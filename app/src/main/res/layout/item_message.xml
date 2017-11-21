@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dip"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        >
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/unmessage"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dip"
+            android:paddingRight="13dip"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/del_bg"
+            android:layout_alignParentRight="true"
+            android:text="删除"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/imageview"
+            android:layout_toLeftOf="@id/del"
+            android:layout_marginRight="10dip"
+            android:singleLine="true"
+            android:gravity="left"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="--"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:background="@color/line"
+        />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray4"
+        android:padding="5dip"
+        android:textSize="13sp"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/gray4"
+        android:layout_marginLeft="10dip"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:layout_toRightOf="@id/title"
+        android:text="--"
+        />
+</LinearLayout>

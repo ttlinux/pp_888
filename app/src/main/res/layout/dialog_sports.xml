@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+
+            <RelativeLayout
+                android:id="@+id/relayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+                <ScrollView
+                    android:id="@+id/scrollview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="60dip"
+                    android:paddingTop="50dip"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="10dip"
+                    android:background="@drawable/bg_blur"
+                    android:alwaysDrawnWithCache="false"
+                    android:fadingEdge="none"
+                    android:overScrollMode="never"
+                    android:persistentDrawingCache="none"
+                    android:scrollbars="none">
+                <RadioGroup
+                    android:id="@+id/listlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+
+                     >
+                    <!--<RadioButton-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    </RadioGroup>
+                </ScrollView>
+                <ImageView
+                    android:id="@+id/scale_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/scrollview"
+                    android:layout_marginLeft="20dip"
+                    android:background="#00000000"
+                    android:padding="30dip"
+                    android:src="#00000000"
+
+                    />
+            </RelativeLayout>
+
+</RelativeLayout>

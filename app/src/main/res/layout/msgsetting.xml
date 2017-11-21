@@ -1,0 +1,220 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:orientation="vertical">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        layout="@layout/uesr_toplayout"/>
+    <RelativeLayout
+        android:id="@+id/networklayout"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/top"
+        android:layout_height="wrap_content"
+        android:tag="skin:funcbag:background"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:text="消息推送"
+            android:tag="skin:textcolor_middle:textColor"
+            android:textSize="13sp" />
+        <CheckBox
+            android:id="@+id/set_push"
+            style="@style/persion_leftimg_style"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/setting_checked_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dip"
+        android:layout_alignParentTop="true"
+        android:tag="skin:cutoff_line:background"
+        android:background="@color/line" />
+    <RelativeLayout
+        android:id="@+id/setgesturelayout"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/top"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:text="手势密码"
+            android:tag="skin:textcolor_middle:textColor"
+            android:textSize="13sp" />
+        <CheckBox
+            android:id="@+id/set_gesture"
+            style="@style/persion_leftimg_style"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/setting_checked_selector" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:tag="skin:cutoff_line:background"
+        android:background="@color/line" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/gesturelayout"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/setgesturetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:text="修改手势密码"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/icon_backindicator"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:tag="skin:cutoff_line:background"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cleanlayout"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:text="清除缓存"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/cleansize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="28dp"
+            android:text=""
+            android:textSize="13sp"
+            android:layout_alignBottom="@+id/img1"
+            android:layout_toStartOf="@+id/img1"
+            android:layout_marginEnd="10dp" />
+        <TextView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/icon_backindicator"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:tag="skin:cutoff_line:background"
+        android:background="@color/line" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutlayout"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="28dp"
+        android:text="关于我们"
+        android:textSize="13sp" />
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="28dp"
+            android:text="当前版本：V1.0"
+            android:textSize="13sp"
+            android:layout_alignBottom="@+id/img"
+            android:layout_toStartOf="@+id/img"
+            android:layout_marginEnd="10dp" />
+        <TextView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/icon_backindicator"
+           />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:tag="skin:cutoff_line:background"
+        android:background="@color/line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+    <TextView
+        android:id="@+id/exit"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/usertopbagcolor"
+        android:text="退出登录"
+        android:textSize="13sp" />
+</LinearLayout>
+</LinearLayout>

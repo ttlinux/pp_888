@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/radiu_white_rangle_nobackgroud"
+            android:state_checked="false"/>
+    <item android:drawable="@drawable/radiu_white_rangle_bluebackgroud"
+        android:state_checked="true"/>
+</selector>

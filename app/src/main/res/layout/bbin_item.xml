@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.a8android888.bocforandroid.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:minHeight="35dp"
+        android:minWidth="35dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/videoimg" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/videoname"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="13dp"
+        android:text="wwwww"/>
+    </LinearLayout>
+    <ImageView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/srcid" />
+</RelativeLayout>
+</com.a8android888.bocforandroid.view.MyLinearLayout>
